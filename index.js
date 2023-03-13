@@ -117,9 +117,13 @@ For example: invoking getInningScore(inning) might return this object:
 }
   */
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+function getInningScore(callback) {
+  return {
+    Home: callback(),
+    Away: callback()
+  }
 }
+getInningScore(inning)
 
 /* STRETCH: ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
